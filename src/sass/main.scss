@@ -1,0 +1,140 @@
+// main.scss
+
+* {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: navy;
+}
+hr {
+    margin: 10px 0;
+    
+}
+header {
+    padding: 0 2rem;
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    background-color: darkblue;
+    height: 12vh;
+    h1 {
+        font-size: 3rem;
+        line-height: 12vh;
+        color: white;
+    }
+}
+
+main {
+    background-color: white;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .wrapper {
+        padding: 1vw;
+        height: 78vh;
+        .container {
+            height: 77vh;
+            overflow-y: auto;
+            float: left;
+            &.contactlist {
+                width: 28vw;
+                li {
+                    list-style: none;
+                    padding: 1rem;
+                    img {
+                        border-top-left-radius: 15px;
+                    }
+                    &:hover {
+                        background-color: lightgoldenrodyellow;
+                        a {
+                            font-size: 1.2rem;
+                            img {
+                                transform: scale(1.2);
+                            }
+                            p,
+                            span {
+                                color: darkred;
+                            }
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        transition: all 0.3s ease-out;
+                        figure {
+                            &:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                            img {
+                                float: left;
+                                padding-right: 10px;
+                                transition: all 0.3s ease-out;
+                            }
+                            p {
+                                font-weight: 700;
+                            }
+                            span {
+                                font-style: italic;
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            &.contactdetails {
+                width: 68vw;
+                p {
+                    text-align: center;
+                    
+                }
+                img {
+                        border-top-left-radius: 25px;
+                        border-bottom-right-radius: 25px;
+                        float:left;
+                            
+                        }
+                div {
+                    padding: 20px;
+                    margin: 0 0 0 50px;
+                    &:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                    }
+                    figure {
+                        img {
+                            border-top-left-radius: 25px;
+                            float: left;
+                            padding-right: 40px;
+                        }
+                        
+                        span {
+                            font-style: italic;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: darkblue;
+    height: 8vh;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: left;
+    vertical-align: middle;
+    p {
+        color: white;
+    }
+}
